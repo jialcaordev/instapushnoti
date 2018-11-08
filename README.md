@@ -1,3 +1,3 @@
-# Twittor
+# Instapush
 
-Un cascarón de un Twitter de héroes!
+ Envia notificaciones
