@@ -108,7 +108,7 @@ function getPublicKey() {
     //     .then( res => res.text())
     //     .then( console.log );
 
-    return fetch('api/key')
+    return fetch('https://instapushm.herokuapp.com/api/key')
         .then(res => res.arrayBuffer())
         // returnar arreglo, pero como un Uint8array
         .then(key => new Uint8Array(key));
@@ -131,7 +131,7 @@ btnDesactivadas.on('click', function () {
             .then(suscripcion => {
 
                  //console.log(suscripcion, 'suscripcion');
-                fetch('api/subscribe', {
+                fetch('https://instapushm.herokuapp.com/api/subscribe', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify(suscripcion)
