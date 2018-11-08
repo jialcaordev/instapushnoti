@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Quicksand';
+  }
+  
+  html, body {
+    margin: 0px !important;
+    color: #7f8c8d;
+    font-size: 16px;
+    background-color: #dde1e2; 
+    width: 100%;
+
+
+    overscroll-behavior-y: contain;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.container {
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container button {
+  background-color: green;
+  color: white;
+  line-height: 33px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px 70px;
+}
+
